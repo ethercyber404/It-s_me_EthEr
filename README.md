@@ -76,11 +76,8 @@ button{
 </div>
 
 <div id="question" class="screen">
-    
     <h1>Will you be my Valentine?!😁💖</h1>
-    
     <h6>কেউ নাই! তাই তোমারে দিলাম 🫣|আর সুন্দর কেউ নাই list এ</h6>
-    
     <button id="yes">Yes😍</button>
     <button id="no">No!😌</button>
     <h6>Hints : The No! button is a Bit Say...🙈</h6>
@@ -90,7 +87,8 @@ button{
 <div id="final" class="screen">
     <h1>Yea! Good choice!- আমি জানতাম!!🥰</h1>
     <!-- Cute animated couple GIF -->
-<img src="https://gifdb.com/gif/cute-animated-couple-i-love-you-jpt2cd82u5cw79my.html" width="300" alt="I Love You Couple GIF">
+[<img src="https://gifdb.com/gif/cute-animated-couple-i-love-you-jpt2cd82u5cw79my.html" width="300" alt="I Love You Couple GIF">](https://dl.glitter-graphics.com/pub/2561/2561941mue86g3ygg.gif
+)
 
 
 </div>
