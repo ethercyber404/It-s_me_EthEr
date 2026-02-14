@@ -40,6 +40,12 @@ button{
     color:white;
 }
 
+.sticker{
+    max-width:300px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
 .heart{
     position:absolute;
     animation: float 5s linear infinite;
@@ -81,15 +87,12 @@ button{
     <button id="yes">Yes😍</button>
     <button id="no">No!😌</button>
     <h6>Hints : The No! button is a Bit Say...🙈</h6>
-    
 </div>
 
 <div id="final" class="screen">
     <h1>Yea! Good choice!- আমি জানতাম!!🥰</h1>
     <!-- Cute animated couple GIF -->
-    <body><img class="sticker" src="https://i.imgur.com/4AiXzf8.png" alt="Cute Bear and Bunny Sticker"></body>
-
-
+    <img class="sticker" src="https://i.imgur.com/4AiXzf8.png" alt="Cute Bear and Bunny Sticker">
 </div>
 
 <script>
@@ -157,4 +160,5 @@ function launchHearts(){
 
 </body>
 </html>
+
 
