@@ -87,7 +87,7 @@ button{
 <div id="final" class="screen">
     <h1>Yea! Good choice!- আমি জানতাম!!🥰</h1>
     <!-- Cute animated couple GIF -->
- <img src="images/Screenshot 2026-02-14 at 5.06.35 AM.png" alt="Cute Bear and Bunny GIF">
+ <img src="images/bear-bunny.png" alt="Cute Bear and Bunny">
 
 </div>
 
