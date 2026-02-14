@@ -92,7 +92,8 @@ button{
 <div id="final" class="screen">
     <h1>Yea! Good choice!- আমি জানতাম!!🥰</h1>
     <!-- Cute animated couple GIF -->
-    <img class="sticker" src="https://i.imgur.com/4AiXzf8.png" alt="Cute Bear and Bunny Sticker">
+  <img class="sticker" src="https://media.giphy.com/media/3o7aCTPPm4OHfRLSH6/giphy.gif" alt="Cute Animated Sticker">
+
 </div>
 
 <script>
