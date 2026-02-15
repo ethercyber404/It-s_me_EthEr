@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>ONLY FOR Al aminer bou...😘</title>
+<title>ONLY FOR Eyza...😘</title>
 <style>
 body{
     margin:0;
@@ -71,18 +71,18 @@ button{
 </iframe>
 
 <div id="intro" class="screen">
-    <h1>হেই আলামিনের বউ😅</h1>
+    <h1>Hei Eyza😅</h1>
     <button onclick="start()">Tap Koro..🙃</button>
 </div>
 
 <div id="loading" class="screen">
-    <h1>দেখা যাক আপনি আমাকে কতটুকু ভালোবাসতে পারবেন... 💞</h1>
+    <h1>Counting Percentage_of(love)... 💞</h1>
     <h2 id="percent">0%</h2>
 </div>
 
 <div id="question" class="screen">
-    <h1>Will you be my Valentine vabi?!😁</h1>
-    <h6>জানি বিশ্বাস করবা না! তাই দিলাম😆</h6> 
+    <h1>Will you be my Valentine Eyza?!😊</h1>
+    <h6>Seriously nich😆</h6> 
     <button id="yes">Yes😍</button>
     <button id="no">No!😌</button>
     <h6>Hints : The No! button is a Bit Say...🙈</h6>
