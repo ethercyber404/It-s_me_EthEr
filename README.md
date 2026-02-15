@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>ONLY FOR SAIKAAA...🙈</title>
+<title>ONLY FOR Al aminer bou...😘</title>
 <style>
 body{
     margin:0;
@@ -71,7 +71,7 @@ button{
 </iframe>
 
 <div id="intro" class="screen">
-    <h1>HEY SAIKAAA😅</h1>
+    <h1>HEY Vabi😅</h1>
     <button onclick="start()">Tap Koro..🙃</button>
 </div>
 
@@ -81,7 +81,7 @@ button{
 </div>
 
 <div id="question" class="screen">
-    <h1>Will you be my Valentine Sikaaa?!😁</h1>
+    <h1>Will you be my Valentine vabi?!😁</h1>
     <h6>জানি বিশ্বাস করবা না! তাই দিলাম😆</h6> 
     <button id="yes">Yes😍</button>
     <button id="no">No!😌</button>
