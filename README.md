@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ONLY FOR Shila...😘</title>
+<title>ONLY FOR Pookie...😘</title>
 
 <style>
 body{
@@ -73,7 +73,7 @@ button{
 ></iframe>
 
 <div id="intro" class="screen">
-    <h1>Hei Shila😅</h1>
+    <h1>Hei Pookie😅</h1>
     <button onclick="start()">Tap Koro..🙃</button>
 </div>
 
@@ -84,7 +84,7 @@ button{
 
 <div id="question" class="screen">
     <h1>Will you be my Valentine Shila?!😊</h1>
-    <h6>Seriously nich😆</h6>
+    <h6>Take it as a joke, Nobody want's to be your Partner Btw.😆</h6>
     <button id="yes">Yes😍</button>
     <button id="no">No!😌</button>
     <h6>Hints : The No! button is a Bit Say...🙈</h6>
