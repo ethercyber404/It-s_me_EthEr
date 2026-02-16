@@ -83,7 +83,7 @@ button{
 </div>
 
 <div id="question" class="screen">
-    <h1>Will you be my Valentine Shila?!😊</h1>
+    <h1>Will you be my Valentine Pookie..!😊</h1>
     <h6>Take it as a joke, Nobody want's to be your Partner Btw.😆</h6>
     <button id="yes">Yes😍</button>
     <button id="no">No!😌</button>
