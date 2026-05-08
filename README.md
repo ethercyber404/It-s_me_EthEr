@@ -1,10 +1,9 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ONLY FOR ZARA...😘</title>
-
 <style>
 body{
     margin:0;
@@ -13,19 +12,15 @@ body{
     background: linear-gradient(135deg,#ff9ec4,#ffcce6);
     overflow:hidden;
 }
-
 .screen{
     display:none;
     padding-top:120px;
     color:white;
 }
-
 #intro{ display:block; }
-
 #question{
     position:relative;
 }
-
 button{
     padding:15px 30px;
     font-size:22px;
@@ -35,41 +30,37 @@ button{
     margin:20px;
     transition:.3s;
 }
-
 #yes{
     background:#ff4d88;
     color:white;
 }
-
 #no{
     position:absolute;
     background:gray;
     color:white;
 }
-
 .heart{
     position:absolute;
     animation: float 5s linear infinite;
     z-index:999;
 }
-
 @keyframes float{
     0%{transform:translateY(100vh);opacity:1;}
     100%{transform:translateY(-10vh);opacity:0;}
 }
 </style>
 </head>
-
 <body>
 
 <!-- Hidden YouTube music iframe -->
 <iframe
   id="music"
-  width="0.1"
+  width="1"
   height="1"
   src=""
   frameborder="0"
-  allow="autoplay; encrypted-media"
+  allow="autoplay; encrypted-media; fullscreen"
+  style="position:absolute;top:-10px;left:-10px;"
 ></iframe>
 
 <div id="intro" class="screen">
@@ -87,7 +78,7 @@ button{
     <h6>Take it as a joke, Nobody want's to be your Partner Btw.😆</h6>
     <button id="yes">Yes😍</button>
     <button id="no">No!😌</button>
-    <h6>Hints : The No! button is a Bit Say...🙈</h6>
+    <h6>Hints : The No! button is a Bit Shy...🙈</h6>
 </div>
 
 <div id="final" class="screen">
@@ -96,26 +87,23 @@ button{
 </div>
 
 <script>
-
 function start(){
     document.getElementById("intro").style.display="none";
     document.getElementById("loading").style.display="block";
 
-    // Mobile-safe autoplay (muted first)
+    // ✅ Fixed: Shorts URL → Embed URL with autoplay
     document.getElementById("music").src =
-    "https://www.youtube.com/shorts/0-npS2Fwj3U";
+        "https://www.youtube.com/embed/0-npS2Fwj3U?autoplay=1&mute=0";
 
     let percent = 0;
-
     let interval = setInterval(()=>{
         percent++;
         document.getElementById("percent").innerText = percent + "%";
-
         if(percent >= 100){
             clearInterval(interval);
             showQuestion();
         }
-    },30);
+    }, 30);
 }
 
 function showQuestion(){
@@ -124,48 +112,33 @@ function showQuestion(){
 }
 
 document.addEventListener("DOMContentLoaded", function(){
+    let noBtn = document.getElementById("no");
+    let yesBtn = document.getElementById("yes");
+    let size = 22;
 
-let noBtn = document.getElementById("no");
-let yesBtn = document.getElementById("yes");
-let size = 22;
+    // No button dodging (mobile + pc)
+    function moveNo(){
+        let x = Math.random() * (window.innerWidth - 120);
+        let y = Math.random() * (window.innerHeight - 120);
+        noBtn.style.left = x + "px";
+        noBtn.style.top = y + "px";
+        size += 5;
+        yesBtn.style.fontSize = size + "px";
+    }
 
-// No button dodging (mobile + pc)
-function moveNo(){
-    let x = Math.random()*(window.innerWidth-120);
-    let y = Math.random()*(window.innerHeight-120);
-    noBtn.style.left = x+"px";
-    noBtn.style.top = y+"px";
+    noBtn.addEventListener("mouseover", moveNo);
+    noBtn.addEventListener("touchstart", moveNo);
 
-    size += 5;
-    yesBtn.style.fontSize = size+"px";
-}
-
-noBtn.addEventListener("mouseover", moveNo);
-noBtn.addEventListener("touchstart", moveNo);
-
-// Yes click
-yesBtn.addEventListener("click", function(){
-    document.getElementById("question").style.display="none";
-    document.getElementById("final").style.display="block";
-    launchHearts();
-});
-
+    // Yes click
+    yesBtn.addEventListener("click", function(){
+        document.getElementById("question").style.display="none";
+        document.getElementById("final").style.display="block";
+        launchHearts();
+    });
 });
 
 // Floating hearts
 function launchHearts(){
-    for(let i=0;i<50;i++){
-        let heart=document.createElement("div");
-        heart.classList.add("heart");
-        heart.innerHTML="💖";
-        heart.style.left=Math.random()*100+"vw";
-        heart.style.fontSize=(20+Math.random()*30)+"px";
-        document.body.appendChild(heart);
-        setTimeout(()=>heart.remove(),5000);
-    }
-}
-
-</script>
-
-</body>
-</html>
+    for(let i = 0; i < 50; i++){
+        setTimeout(()=>{
+            let heart = document.createEleme
