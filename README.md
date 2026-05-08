@@ -50,48 +50,41 @@ button{
 </style>
 </head>
 <body>
-
 <!-- Hidden YouTube music iframe -->
 <iframe
   id="music"
-  width="1"
+  width="0.1"
   height="1"
   src=""
   frameborder="0"
-  allow="autoplay; encrypted-media; fullscreen"
-  style="position:absolute;top:-10px;left:-10px;"
+  allow="autoplay; encrypted-media"
 ></iframe>
-
 <div id="intro" class="screen">
     <h1>Hei ZARA😅</h1>
     <button onclick="start()">Tap Koro..🙃</button>
 </div>
-
 <div id="loading" class="screen">
     <h1>Counting Percentage_of(love)... 💞</h1>
     <h2 id="percent">0%</h2>
 </div>
-
 <div id="question" class="screen">
     <h1>Will you be my Valentine ZARA..!😊</h1>
     <h6>Take it as a joke, Nobody want's to be your Partner Btw.😆</h6>
     <button id="yes">Yes😍</button>
     <button id="no">No!😌</button>
-    <h6>Hints : The No! button is a Bit Shy...🙈</h6>
+    <h6>Hints : The No! button is a Bit Say...🙈</h6>
 </div>
-
 <div id="final" class="screen">
     <h1>Yea! Good choice!- আমি জানতাম!!🥰</h1>
     <img src="https://media.giphy.com/media/3oriO6qJiXajN0TyDu/giphy.gif" width="250">
 </div>
-
 <script>
 function start(){
     document.getElementById("intro").style.display="none";
     document.getElementById("loading").style.display="block";
+    // Mobile-safe autoplay (muted first)
     document.getElementById("music").src =
-        "https://www.youtube.com/embed/0-npS2Fwj3U?autoplay=1&mute=0";
-
+    "https://www.youtube.com/shorts/0-npS2Fwj3U";
     let percent = 0;
     let interval = setInterval(()=>{
         percent++;
@@ -100,36 +93,47 @@ function start(){
             clearInterval(interval);
             showQuestion();
         }
-    }, 30);
+    },30);
 }
-
 function showQuestion(){
     document.getElementById("loading").style.display="none";
     document.getElementById("question").style.display="block";
 }
-
 document.addEventListener("DOMContentLoaded", function(){
-    let noBtn = document.getElementById("no");
-    let yesBtn = document.getElementById("yes");
-    let size = 22;
-    function moveNo(){
-        let x = Math.random() * (window.innerWidth - 120);
-        let y = Math.random() * (window.innerHeight - 120);
-        noBtn.style.left = x + "px";
-        noBtn.style.top = y + "px";
-        size += 5;
-        yesBtn.style.fontSize = size + "px";
-    }
-
-    noBtn.addEventListener("mouseover", moveNo);
-    noBtn.addEventListener("touchstart", moveNo);
-    yesBtn.addEventListener("click", function(){
-        document.getElementById("question").style.display="none";
-        document.getElementById("final").style.display="block";
-        launchHearts();
-    });
+let noBtn = document.getElementById("no");
+let yesBtn = document.getElementById("yes");
+let size = 22;
+// No button dodging (mobile + pc)
+function moveNo(){
+    let x = Math.random()*(window.innerWidth-120);
+    let y = Math.random()*(window.innerHeight-120);
+    noBtn.style.left = x+"px";
+    noBtn.style.top = y+"px";
+    size += 5;
+    yesBtn.style.fontSize = size+"px";
+}
+noBtn.addEventListener("mouseover", moveNo);
+noBtn.addEventListener("touchstart", moveNo);
+// Yes click
+yesBtn.addEventListener("click", function(){
+    document.getElementById("question").style.display="none";
+    document.getElementById("final").style.display="block";
+    launchHearts();
 });
+});
+// Floating hearts
 function launchHearts(){
-    for(let i = 0; i < 50; i++){
-        setTimeout(()=>{
-            let heart = document.createEleme
+    for(let i=0;i<50;i++){
+        let heart=document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML="💖";
+        heart.style.left=Math.random()*100+"vw";
+        heart.style.fontSize=(20+Math.random()*30)+"px";
+        document.body.appendChild(heart);
+        setTimeout(()=>heart.remove(),5000);
+    }
+}
+</script>
+</body>
+</html>
+etar song play hocche na
