@@ -103,7 +103,7 @@ function start(){
 
     // Mobile-safe autoplay (muted first)
     document.getElementById("music").src =
-    "https:[//www.youtube.com/embed/WeXVuFG9MZU?autoplay=1&loop=1&playlist=WeXVuFG9MZU&mute](https://www.youtube.com/shorts/0-npS2Fwj3U)";
+    "https://www.youtube.com/shorts/0-npS2Fwj3U";
 
     let percent = 0;
 
