@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -90,8 +89,6 @@ button{
 function start(){
     document.getElementById("intro").style.display="none";
     document.getElementById("loading").style.display="block";
-
-    // ✅ Fixed: Shorts URL → Embed URL with autoplay
     document.getElementById("music").src =
         "https://www.youtube.com/embed/0-npS2Fwj3U?autoplay=1&mute=0";
 
@@ -115,8 +112,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let noBtn = document.getElementById("no");
     let yesBtn = document.getElementById("yes");
     let size = 22;
-
-    // No button dodging (mobile + pc)
     function moveNo(){
         let x = Math.random() * (window.innerWidth - 120);
         let y = Math.random() * (window.innerHeight - 120);
@@ -128,16 +123,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     noBtn.addEventListener("mouseover", moveNo);
     noBtn.addEventListener("touchstart", moveNo);
-
-    // Yes click
     yesBtn.addEventListener("click", function(){
         document.getElementById("question").style.display="none";
         document.getElementById("final").style.display="block";
         launchHearts();
     });
 });
-
-// Floating hearts
 function launchHearts(){
     for(let i = 0; i < 50; i++){
         setTimeout(()=>{
