@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ONLY FOR ZARA...😘</title>
+<title>ONLY FOR Pookie...😘</title>
 <style>
 body{
     margin:0;
@@ -60,7 +60,7 @@ button{
   allow="autoplay; encrypted-media"
 ></iframe>
 <div id="intro" class="screen">
-    <h1>Hei ZARA😅</h1>
+    <h1>Hei Pookie😅</h1>
     <button onclick="start()">Tap Koro..🙃</button>
 </div>
 <div id="loading" class="screen">
@@ -68,7 +68,7 @@ button{
     <h2 id="percent">0%</h2>
 </div>
 <div id="question" class="screen">
-    <h1>Will you be my Valentine ZARA..!😊</h1>
+    <h1>Will you be my Valentine pookie..!😊</h1>
     <h6>Take it as a joke, Nobody want's to be your Partner Btw.😆</h6>
     <button id="yes">Yes😍</button>
     <button id="no">No!😌</button>
